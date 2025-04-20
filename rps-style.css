@@ -1,0 +1,72 @@
+@keyframes blink{
+    0%{
+        opacity: 1;
+    }
+    49%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+::selection{
+    background-color: black;
+    color: white;
+}
+
+::-moz-selection{
+    background-color: black;
+    color: white;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+}
+
+main{
+    max-width: 500px;
+    min-width: 250px;
+    text-align: left;
+}
+section{
+    padding: 10px;
+    border-style: solid;
+}
+
+
+button{
+    border-style: none;
+    background-color: transparent;
+
+    cursor: pointer;
+}
+button:hover::before{
+    content: '[';
+    margin-right: 4px;
+
+    animation: blink 0.5s linear 1s infinite forwards normal;
+}
+button:hover::after{
+    content: ']';
+    margin-left: 4px;
+    animation: blink 0.5s linear 1s infinite forwards normal;
+
+}
+button:active::before{
+    margin: 0px;
+}
+button:active::after{
+    margin: 0px;
+}
+
+.has-transition{
+    transition-property: all;
+    transition-duration: 0.3s;
+}
