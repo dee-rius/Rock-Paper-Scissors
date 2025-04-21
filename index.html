@@ -16,20 +16,22 @@
                     <p>Choose:</p>
 
                     <div>
-                        <button class="has-transition" id="choose-rock-button">Rock</button>
-                        <button class="has-transition" id="choose-paper-button">Paper</button>
-                        <button class="has-transition" id="choose-scissors-button">Scissors</button>
+                        <button class="has-transition"  name="choose-button" value="Rock" id="choose-rock-button">Rock</button>
+                        <button class="has-transition" name="choose-button" value="Paper" id="choose-paper-button">Paper</button>
+                        <button class="has-transition" name="choose-button"  value="Scissors" id="choose-scissors-button">Scissors</button>
                     </div>
                 </section>
 
                 <section>
-                    <p>You chose: <strong  style="--order:1" id="user-chose-text"></strong></p>
-                    <p>Opponent chose: <strong  style="--order:2" id="opponent-chose-text"></strong></p>
-                    <p>Result: <strong  style="--order:3" id="results-text"></strong></p>
+                    <p>You chose: <strong  style="--order: 1" name="results-text" id="user-chose-text"></strong></p>
+                    <p>Opponent chose: <strong  style="--order: 2" name="results-text" id="opponent-chose-text"></strong></p>
+                    <p>Result: <strong  style="--order:3 "  name="results-text" id="win-lose-draw-text"></strong></p>
                 </section>
 
             </section>
 
         </main>
+
+        <script src="rps-script.js"></script>
     </body>
 </html>
