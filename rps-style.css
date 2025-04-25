@@ -14,20 +14,28 @@
 }
 
 ::selection{
-    background-color: black;
-    color: white;
+    background-color: #00ADB5;
+    color: #393E46;
 }
 
 ::-moz-selection{
-    background-color: black;
-    color: white;
+    background-color: #00ADB5;
+    color: #393E46;
 }
 
 body{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    padding-top: 50px;
+    
+    width: 96vw;
+    height: 96vh;
+
+
+    font-family: 'Courier New', Courier, monospace;
+    color: #00ADB5;
+    background-color: #222831;
 }
 
 main{
@@ -38,12 +46,16 @@ main{
 section{
     padding: 10px;
     border-style: solid;
+    border-width: 1px;
 }
 
 
 button{
     border-style: none;
     background-color: transparent;
+
+    font-family: 'Courier New', Courier, monospace;
+    color: #00ADB5;
 
     cursor: pointer;
 }
